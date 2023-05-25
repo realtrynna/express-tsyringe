@@ -1,0 +1,25 @@
+{
+  "name": "tsyringe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "dev": "npm run prebuild && tsc-watch --onSuccess \"node dist/server.js\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.2.3",
+    "express": "^4.18.2",
+    "reflect-metadata": "^0.1.13",
+    "tsyringe": "^4.7.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "ts-watch": "^1.0.8",
+    "tsc-watch": "^6.0.4",
+    "typescript": "^5.0.4"
+  }
+}
